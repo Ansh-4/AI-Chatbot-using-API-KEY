@@ -74,6 +74,11 @@ You: Hello
 Assistant: Hello! How may I assist you?
 ```
 
+
+
+https://github.com/user-attachments/assets/b744b2c1-c751-46a9-9de7-a49be4617e8d
+
+
 ---
 
 ## 🌱 Future Improvements
@@ -82,5 +87,7 @@ Assistant: Hello! How may I assist you?
 * Telegram / Discord bot integration
 * Voice input + output
 * Chat memory database
+
+  
 
 
