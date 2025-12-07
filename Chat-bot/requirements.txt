@@ -1,152 +1,153 @@
-# 📦 Project Requirements & Installation Guide
+# Project Requirements and Installation Guide
 
-This document explains all necessary packages and how to install and run the chatbot on **Windows** and **Unix / macOS / Linux** systems.
-
----
-
-## 📁 Required Files
-
-Before installing, ensure your project folder contains:
-
-```
-mistral-chatbot/
-│
-├─ main.py
-├─ requirements.txt
-├─ .env                 # contains API key 
-└─ .gitignore
-```
+This document explains the required packages and how to install and run the chatbot on Windows and Unix-based systems.
 
 ---
 
-## 📦 Required Packages
+## Required Files
 
-Your `requirements.txt` should include:
+Ensure your project directory contains the following files:
 
-```text
+```
+chatbot.py
+requirements.txt
+.env
+.gitignore
+``
+## Required Packages
+
 mistralai
 python-dotenv
-```
 
 ---
 
-## 🔐 Environment Variable Setup
+## Environment Variable Setup
 
-Create a `.env` file in the same directory:
+Create a file named `.env` in the project directory and add the following line:
 
-```text
+```
 API_KEY=your_mistral_api_key_here
 ```
 
+Replace `your_mistral_api_key_here` with your actual API key.
 
 ---
 
-# 🖥️ Installation Instructions
+# Installation Instructions
 
-## 📌 1. Install Python
+## 1. Install Python
 
-Ensure Python **3.9 or later** is installed.
+Make sure Python 3.9 or later is installed.
 
 Check version:
 
-```bash
+```
 python --version
 ```
 
-If not installed, download from:
+or
+
+```
+python3 --version
+```
+
+If Python is not installed, download it from:
 [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
 ---
 
-## 📌 2. Create a Virtual Environment (Recommended)
+## 2. Create a Virtual Environment (Recommended)
 
-### Windows (PowerShell / CMD)
+### Windows
 
-```bash
+```
 python -m venv venv
 venv\Scripts\activate
 ```
 
 ### macOS / Linux / Unix
 
-```bash
+```
 python3 -m venv venv
 source venv/bin/activate
 ```
 
 ---
 
-## 📌 3. Install Dependencies
+## 3. Install Project Requirements
 
 ### Windows
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
 ### macOS / Linux / Unix
 
-```bash
+```
 pip3 install -r requirements.txt
 ```
 
 ---
 
-# ▶️ Running the Chatbot
-
-Once installed:
+# Running the Chatbot
 
 ### Windows
 
-```bash
+```
 python main.py
 ```
 
 ### macOS / Linux / Unix
 
-```bash
+```
 python3 main.py
 ```
 
-Example:
+When prompted, type your input and press Enter.
+To exit the program, type:
 
 ```
-You: Hello
-Assistant: Hi there! How can I assist you today?
+exit
 ```
 
-Exit gracefully:
+or
 
 ```
-You: quit
+quit
 ```
 
 ---
 
-# 🛑 Common Issues
+# Common Issues
 
-### ❗ `ModuleNotFoundError: No module named 'dotenv'`
+1. ModuleNotFoundError: No module named 'dotenv'
 
-Install missing package:
+Install:
 
-```bash
+```
 pip install python-dotenv
 ```
 
-### ❗ `mistralai not found`
+2. ModuleNotFoundError: No module named 'mistralai'
 
-```bash
+Install:
+
+```
 pip install mistralai
 ```
 
-### ❗ API key not loading
+3. API key not loading
 
-* Check `.env` formatting:
-  `API_KEY=your_key_here`
-* Ensure `.env` is in the same folder as `main.py`
-* Make sure `.gitignore` includes `.env`
+* Ensure `.env` exists in the same folder as `main.py`
+* Confirm the line format in `.env`:
+
+  ```
+  API_KEY=your_key_here
+  ```
+* Verify that `.env` is listed in `.gitignore`
 
 ---
 
-
-
+This completes the setup and installation process.
+You can now successfully run the chatbot in your terminal.
