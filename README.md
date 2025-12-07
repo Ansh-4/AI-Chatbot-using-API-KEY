@@ -30,7 +30,7 @@ A simple command-line chatbot built using the **Mistral AI API**. This project e
 ```
 mistral-chatbot/
 │
-├─ main.py
+├─ chatbot.py
 ├─ .env (not tracked)
 ├─ .gitignore
 └─ requirements.txt
