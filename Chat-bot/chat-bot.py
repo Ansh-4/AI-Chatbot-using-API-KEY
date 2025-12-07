@@ -33,6 +33,7 @@ while True:
         break
     answer = chatbot(user_input)
     
-    print("Assitant:",answer)
+    print("Assistant:",answer)
     
+
 
