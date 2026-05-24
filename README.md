@@ -1,4 +1,4 @@
-# AI-Chatbot-using-API-KEY
+# AI-Chatbot-using-API-KEY (hugging face)
 A lightweight Python chatbot powered by the Mistral AI API, featuring real-time console interaction and secure API key handling. Ideal for experimenting with AI responses and building your own conversational assistant.
 # 🤖 Mistral Python Chatbot
 
